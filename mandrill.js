@@ -68,7 +68,7 @@
               json = {
                 status: 'error',
                 name: 'GeneralError',
-                message: e
+                message: 'Could not parse response body ("'+ json + '") with statusCode ' + res.statusCode + ': ' + e.message
               };
             }
             if (json == null) {
